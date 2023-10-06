@@ -1,4 +1,4 @@
-add_executable(
+add_executable(suite_module_a_app
         test_module_a.c
 )
 
