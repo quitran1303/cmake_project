@@ -28,7 +28,7 @@ jobs:
       run: ./build_test.sh
 
     - name: Test
-      working-directory: ${{github.workspace}}/build
+      working-directory: ${{github.workspace}}
       # Execute tests defined by the CMake configuration.
-      run: ctest --verbose
+      run: ./run_test.sh
 
