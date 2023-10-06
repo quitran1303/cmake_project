@@ -20,7 +20,7 @@ void test_AverageFourBytes_should_AverageMidRangeValues_suite2(void)
 void test_AverageFourBytes_should_AverageHighValues_suite2(void)
 {
     TEST_ASSERT_EQUAL_HEX8(80, AverageFourBytes(70, 80, 90, 80));
-    TEST_ASSERT_EQUAL_HEX8(1270, AverageFourBytes(127, 127, 127, 127));
+    TEST_ASSERT_EQUAL_HEX8(127, AverageFourBytes(127, 127, 127, 127));
     TEST_ASSERT_EQUAL_HEX8(84, AverageFourBytes(0, 126, 126, 84));
 }
 
