@@ -17,6 +17,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        submodules: 'true'
 
     - name: Configure CMake
       run: ./configure_test.sh
@@ -26,7 +28,7 @@ jobs:
       run: ./build_test.sh
 
     - name: Test
-      working-directory: ${{github.workspace}}/build
+      working-directory: ${{github.workspace}}
       # Execute tests defined by the CMake configuration.
       run: ./run_test.sh
 
