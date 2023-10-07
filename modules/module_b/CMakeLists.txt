@@ -3,6 +3,6 @@ add_library(module_b STATIC
 )
 
 target_include_directories(module_b PUBLIC
-    ${CMAKE_CURRENT_LIST_DIR}
+        .
 )
 

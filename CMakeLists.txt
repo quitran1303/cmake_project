@@ -3,9 +3,7 @@ project("Sample Project" C)
 
 set(TARGET_GROUP production CACHE STRING "Group to build")
 
-add_subdirectory(module_a)
-add_subdirectory(module_b)
-add_subdirectory(module_c)
+add_subdirectory(modules)
 
 if(TARGET_GROUP STREQUAL production)
     add_subdirectory(main)
