@@ -1,7 +1,7 @@
 #! /bin/sh
 
 echo "Clean up all tmp files before rebuild"
-./clean_cmake_output
+rm -rf out/build/*; rm -rf out/test/*;
 echo "-----"
 echo "Run configure cmake with production option"
 cmake -DTARGET_GROUP=production -S . -B out/build
