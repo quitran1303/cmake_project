@@ -104,3 +104,7 @@ out/test/*
 bin/*
 lib/*
 include/*
+
+#IDE files
+.idea
+.DS_Store
