@@ -87,6 +87,7 @@ dkms.conf
 # Debug files
 *.dSYM/
 
+#All temp files after cmake, build, test
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -98,6 +99,8 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
-
 out/build/*
 out/test/*
+bin/*
+lib/*
+include/*
