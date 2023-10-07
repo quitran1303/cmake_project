@@ -1,5 +1,5 @@
 # This starter workflow is for a CMake project running on a single platform
-name: Checkout, build then test the code when push or merge
+name: Checkout, build then run production code when push or merge to "release" branch
 
 on:
   push:
