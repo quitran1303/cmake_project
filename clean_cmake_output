@@ -1,0 +1,6 @@
+#! /bin/sh
+
+echo `pwd`
+rm -rf out/build/*; rm -rf out/test/*; rm -rf bin/*; rm -rf lib/*; rm -rf include/*;
+
+echo "Clean completed all files in out/build, out/test bin/* lib/* and include/*"

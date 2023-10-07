@@ -1,0 +1,14 @@
+#! /bin/sh
+
+echo "Clean up all tmp files before rebuild"
+./clean_cmake_output
+echo "-----"
+echo "Run configure cmake with production option"
+cmake -DTARGET_GROUP=production -S . -B out/build
+echo "-----"
+echo "Build the code"
+cd out/build; make && make install; cd ../..;
+echo "-----"
+echo "Run example"
+./bin/Main
+echo "DONE BUILD AND RUN THE PROJECT"

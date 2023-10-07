@@ -1,0 +1,14 @@
+#! /bin/sh
+
+echo "Clean up all tmp files before rebuild"
+./clean_cmake_output
+echo "-----"
+echo "Run configure cmake with test option"
+cmake -DTARGET_GROUP=test -S . -B out/test
+echo "-----"
+echo "Build the code"
+cd out/test; make;
+echo "-----"
+echo "Run test"
+ctest --verbose
+echo "DONE BUILD AND TEST THE PROJECT"

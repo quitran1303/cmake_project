@@ -1,16 +1,17 @@
 cmake_minimum_required(VERSION 3.6..3.27)
-project(Main VERSION 1.0)                       #${PROJECT_NAME} = "Main
-configure_file(MainConfig.h.in MainConfig.h)    #${PROJECT_NAME}Config.h.in
+project(Cmake_Project VERSION 1.3)
 
 set(TARGET_GROUP production CACHE STRING "Group to build")
-
-add_subdirectory(modules)
+set(PROJECT_INSTALL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
+set(PROJECT_INSTALL_BIN_DIR ${PROJECT_SOURCE_DIR}/bin)
+set(PROJECT_INSTALL_LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
 
 if(TARGET_GROUP STREQUAL production)
-    add_subdirectory(main)
+    add_subdirectory(src)
 
 elseif(TARGET_GROUP STREQUAL test)
     include(CTest)
+    add_subdirectory(src/modules)
     add_subdirectory(external)
     add_subdirectory(test)
 
