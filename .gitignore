@@ -99,5 +99,6 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-out/build
+out/build/*
+out/test/*
 [Bb][Uu][Ii][Ll][Dd]
