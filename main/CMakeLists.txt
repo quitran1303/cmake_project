@@ -5,4 +5,5 @@ add_executable(main
 target_link_libraries(main
     module_a
     module_b
+    module_c
 )
