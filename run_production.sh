@@ -1,3 +1,3 @@
 #! /bin/sh
 
-./main/main
+cd out/build; ./main/main

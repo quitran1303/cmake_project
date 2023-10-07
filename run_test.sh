@@ -1,3 +1,3 @@
 #! /bin/sh
 
-ctest --verbose
+cd out/test; ctest --verbose
