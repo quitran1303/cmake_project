@@ -20,15 +20,6 @@ jobs:
         with:
           submodules: 'true'
 
-      - name: Configure CMake
-        run: ./configure_production.sh
-
-      - name: Build
-        # Build your program with the given configuration
-        run: ./build_production.sh
-
-      - name: Test
-        working-directory: ${{github.workspace}}
-        # Execute tests defined by the CMake configuration.
-        run: ./run_production.sh
+      - name: Configure, Build, and Run
+        run: ./build-and-run
 
