@@ -2,7 +2,7 @@
 Authors: **Qui Tran**
 
 ## NOTES: for checkout the code with submodule
-    $git clone --recurse-submodules <URL TO GITREPO>  
+    $git clone --recurse-submodules git@github.com:quitran1303/cmake_project.git 
 
 ## To run test
 ### By command
